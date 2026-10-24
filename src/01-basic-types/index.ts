@@ -62,7 +62,7 @@ type ColorRGB = [
   green: number,
   blue: number,
 ]; 
-const orange: ColorRGB = [255, 165, 0];
+
 
 function getRandomColor(): ColorRGB {
   const red = Math.floor(Math.random() * 256);
@@ -72,3 +72,11 @@ function getRandomColor(): ColorRGB {
 }
 const SomeColor = getRandomColor();
 console.log(SomeColor);
+
+// enum UserRole {
+//   Admin = 'ADMIN',
+//   User = 'USER',
+//   Guest = 'GUEST',
+// }
+// const userRole: UserRole = UserRole.Admin;
+// console.log(userRole);
