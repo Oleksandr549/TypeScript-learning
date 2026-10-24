@@ -36,3 +36,14 @@ function createPost(post: Post): void {
   console.log(`Created post: ${post.title} by ${post.author.name}`);
 }
 createPost(newPost);
+
+const posts: Post[] = [];
+posts.push(newPost);
+posts.push({
+  title: 'Another Post',
+  body: 'This is another post body.',
+  tags: 'another text',
+  created_at: new Date(),
+  author: authorJohn,
+});
+console.log(posts);
