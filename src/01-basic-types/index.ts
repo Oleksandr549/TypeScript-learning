@@ -57,21 +57,10 @@ const user1: User = {
   age: 25,
 };
 console.log(user1);
-type ColorRGB = [
-  red: number,
-  green: number,
-  blue: number,
-]; 
 
 
-function getRandomColor(): ColorRGB {
-  const red = Math.floor(Math.random() * 256);
-  const green = Math.floor(Math.random() * 256);
-  const blue = Math.floor(Math.random() * 256);
-  return [red, green, blue];
-}
-const SomeColor = getRandomColor();
-console.log(SomeColor);
+
+
 
 // enum UserRole {
 //   Admin = 'ADMIN',
@@ -81,17 +70,3 @@ console.log(SomeColor);
 // const userRole: UserRole = UserRole.Admin;
 // console.log(userRole);
 
-type Dossier<AdditionalInfo> = {
-  name: string;
-  age: number;
-  additionalInfo: AdditionalInfo;
-};
-const dossier1: Dossier<{ occupation: string; age: number }> = {
-  name: 'Alice',
-  age: 30,
-  additionalInfo: {
-    occupation: 'Engineer',
-    age: 30,
-  },
-};
-console.log(dossier1);
