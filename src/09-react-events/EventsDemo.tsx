@@ -18,11 +18,11 @@ export default function EventsDemo() {
     setRole(event.target.value)
   }
 
-  function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
-    if (event.key === 'Escape') {
-      setName('')
+    function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
+      if (event.key === 'Escape') {
+        setName('')
+      }
     }
-  }
 
   function handleButtonClick(event: MouseEvent<HTMLButtonElement>) {
     addLog(`Clicked at x=${event.clientX}, y=${event.clientY}`)

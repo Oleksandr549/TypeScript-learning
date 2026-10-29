@@ -98,14 +98,6 @@ type ApiClientArgs = ConstructorParameters<typeof ApiClient>;
 
 type ApiClientInstance = InstanceType<typeof ApiClient>;
 
-// export function createInstance<T extends new (...args: any[]) => any>(
-//   Ctor: T,
-//   ...args: ConstructorParameters<T>
-// ): InstanceType<T> {
-//   return new Ctor(...args);
-// }
-
-// export const client = createInstance(ApiClient, "https://api.example.com", 5000);
 
 async function fetchUser(): Promise<User> {
   return baseUser;
